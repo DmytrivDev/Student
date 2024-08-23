@@ -1,0 +1,44 @@
+.groups {
+  padding: 3rem 0;
+  background-color: rgba(243, 244, 246, 0.64);
+
+  &__body {
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+  &__info {
+  }
+  &__sub-title {
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+  }
+  &__link-desc {
+    margin-bottom: 0.5rem;
+  }
+  &__link-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .groups {
+    padding: 2.5rem 0;
+
+    &__sub-title {
+      margin-bottom: 0.5rem;
+    }
+    &__link-desc {
+      display: none;
+    }
+    &__link-mob {
+      display: block;
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+}

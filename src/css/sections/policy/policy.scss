@@ -1,0 +1,42 @@
+.policy {
+  padding: 3rem 0 8rem 0;
+
+  &__body {
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .sub-title {
+      margin-bottom: 1.25rem;
+    }
+    .title1 {
+      margin-bottom: 2.25rem;
+      text-align: center;
+    }
+    .text-def {
+      text-align: center;
+    }
+  }
+  &__wrapp {
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .policy {
+    padding: 1.5rem 0 5rem 0;
+
+    &__info {
+      margin-bottom: 5rem;
+
+      .sub-title {
+        margin-bottom: 1.5rem;
+      }
+      .title1 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

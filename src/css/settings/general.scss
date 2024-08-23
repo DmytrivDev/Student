@@ -1,0 +1,55 @@
+html,
+body {
+	font-family: var(--ff);
+	color: var(--main-color);
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+body {
+	padding-top: 5.063rem;
+}
+
+.overhide {
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 85em;
+	padding: 0 2.5em;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1360px) {
+	html,
+	body {
+		font-size: 1.18vw;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	html,
+	body {
+		font-size: 16px;
+	}
+	.container {
+		padding: 0 1.5em;
+	}
+	body {
+		padding-top: 4.5rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	html,
+	body {
+		font-size: 4.1vw;
+	}
+}

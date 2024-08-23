@@ -1,0 +1,125 @@
+.servicesProgress {
+  padding-bottom: 4rem;
+
+  .services {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    &__sub-title {
+      margin-bottom: 0.5rem;
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    &__text {
+      text-align: center;
+      max-width: 30rem;
+    }
+    &__box {
+      width: 38.75rem;
+      padding: 2.5rem 0 2.5rem 2rem;
+    }
+    &__headline {
+      margin-top: 1.5rem;
+    }
+    &__text-card {
+      margin-top: 2rem;
+    }
+    &__link {
+      margin-top: 3rem;
+    }
+    &__list {
+      padding: 0.19rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8rem;
+      border: 0.063rem solid rgba(107, 114, 128, 0.32);
+      background-color: transparent;
+      margin-bottom: 2rem;
+    }
+    &__item {
+    }
+    &__btn {
+      padding: 0.94rem 2.12rem;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25;
+      border-radius: 8rem;
+      background-color: #fff;
+      color: rgba(25, 25, 25, 0.64);
+      &.choose-btn {
+        color: #191919;
+        background-color: #f7f8f9;
+      }
+    }
+  }
+
+  .card {
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1.25rem);
+    transition: all 350ms ease-in;
+
+    &.choose-card {
+      display: block;
+    }
+    &.is-transition {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .servicesProgress {
+    padding-bottom: 5rem;
+
+    .services {
+      &__text {
+        max-width: 100%;
+      }
+      &__content {
+        margin-bottom: 3rem;
+      }
+      &__box {
+        width: 100%;
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
+      }
+      &__text-card {
+        margin-top: 1.5rem;
+      }
+      &__list {
+        padding: 0;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: stretch;
+        border-radius: 0;
+        border: none;
+        gap: 1rem;
+      }
+      &__btn {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+        line-height: 1.42;
+        border-radius: 8rem;
+        background-color: rgba(247, 248, 249, 0.32);
+        border: 0.063rem solid rgba(107, 114, 128, 0.32);
+
+        color: rgba(25, 25, 25, 0.64);
+        &.choose-btn {
+          border-color: transparent;
+          color: #191919;
+          background-color: #f7f8f9;
+        }
+      }
+    }
+  }
+}

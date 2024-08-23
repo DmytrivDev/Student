@@ -1,0 +1,29 @@
+.range {
+  padding: 4rem 0 8rem 0;
+
+  &__body {
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &__sub-title {
+    margin-bottom: 1rem;
+  }
+  &__title {
+    text-align: center;
+    max-width: 31rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .range {
+    padding: 2.5rem 0 5rem 0;
+
+    &__title {
+      max-width: 21rem;
+    }
+  }
+}

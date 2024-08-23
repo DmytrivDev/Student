@@ -1,0 +1,54 @@
+/* Settings */
+@import url('./settings/fonts.scss');
+@import url('./settings/variables.scss');
+@import url('./settings/default.scss');
+@import url('./settings/general.scss');
+@import url('./settings/index.scss');
+@import url('./settings/embeded.scss');
+
+/* General */
+@import url('./sections/general/faq.scss');
+@import url('./sections/general/product.scss');
+@import url('./sections/general/quote.scss');
+
+/* Header */
+@import url('./sections/header/header.scss');
+@import url('./sections/header/parts/mob.scss');
+@import url('./sections/header/parts/nav.scss');
+
+/* Home */
+@import url('./sections/home/wholesaler.scss');
+@import url('./sections/home/services.scss');
+@import url('./sections/home/industries.scss');
+@import url('./sections/home/range.scss');
+@import url('./sections/home/groups.scss');
+
+/* About */
+@import url('./sections/about/partner.scss');
+@import url('./sections/about/industry.scss');
+@import url('./sections/about/industries.scss');
+
+/* Catalog */
+@import url('./sections/catalog/catalog.scss');
+
+/* Services */
+@import url('./sections/services/services.scss');
+@import url('./sections/services/comprehen.scss');
+
+/* Contact */
+@import url('./sections/contact/contact.scss');
+
+/* Demand */
+@import url('./sections/demand/demand.scss');
+
+/* Policy */
+@import url('./sections/policy/policy.scss');
+
+/* Error */
+@import url('./sections/error/error.scss');
+
+/* Footer */
+@import url('./sections/footer/footer.scss');
+
+/* Modals */
+@import url('./sections/modals/modals.scss');
