@@ -1,48 +1,48 @@
 html,
 body {
-	font-family: var(--ff);
-	color: var(--main-color);
-	font-size: 1rem;
-	line-height: 1.5;
+  font-family: var(--ff);
+  color: var(--cm);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .overhide {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .wrapper {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .container {
-	max-width: 82.5em;
-	padding: 0 2.5em;
-	margin: 0 auto;
+  max-width: 82.5em;
+  padding: 0 2.5em;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1320px) {
-	html,
-	body {
-		font-size: 1.21vw;
-	}
+  html,
+  body {
+    font-size: 1.21vw;
+  }
 }
 
 @media screen and (max-width: 960px) {
-	html,
-	body {
-		font-size: 16px;
-	}
-	.container {
-		padding: 0 1.25em;
-	}
+  html,
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 1.25em;
+  }
 }
 
 @media screen and (max-width: 390px) {
-	html,
-	body {
-		font-size: 4.1vw;
-	}
+  html,
+  body {
+    font-size: 4.1vw;
+  }
 }

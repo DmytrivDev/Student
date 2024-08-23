@@ -3,9 +3,16 @@
 @import url('./settings/variables.scss');
 @import url('./settings/default.scss');
 @import url('./settings/general.scss');
+@import url('./settings/index.scss');
+
+/* General */
+/* @import url('./sections/general/general.scss'); */
 
 /* Header */
 @import url('./sections/header/header.scss');
+
+/* Home */
+/* @import url('./sections/home/wholesaler.scss'); */
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
