@@ -3,11 +3,7 @@ body {
 	font-family: var(--ff);
 	color: var(--main-color);
 	font-size: 1rem;
-	line-height: 1.75;
-}
-
-body {
-	padding-top: 5.063rem;
+	line-height: 1.5;
 }
 
 .overhide {
@@ -22,15 +18,15 @@ body {
 }
 
 .container {
-	max-width: 85em;
+	max-width: 82.5em;
 	padding: 0 2.5em;
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1320px) {
 	html,
 	body {
-		font-size: 1.18vw;
+		font-size: 1.21vw;
 	}
 }
 
@@ -40,10 +36,7 @@ body {
 		font-size: 16px;
 	}
 	.container {
-		padding: 0 1.5em;
-	}
-	body {
-		padding-top: 4.5rem;
+		padding: 0 1.25em;
 	}
 }
 
