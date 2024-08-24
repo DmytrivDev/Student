@@ -22,8 +22,8 @@
 @import url('./sections/header/header.scss');
 
 /* Home */
-@import url('./sections/home/guarantee.scss');
 @import url('./sections/home/hero.scss');
+@import url('./sections/home/guarantee.scss');
 @import url('./sections/home/info.scss');
 @import url('./sections/home/rule.scss');
 @import url('./sections/home/services.scss');
