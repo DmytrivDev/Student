@@ -6,13 +6,44 @@
 @import url('./settings/index.scss');
 
 /* General */
-/* @import url('./sections/general/general.scss'); */
+@import url('./sections/general/cities.scss');
+@import url('./sections/general/completed.scss');
+@import url('./sections/general/consult.scss');
+@import url('./sections/general/disciplin.scss');
+@import url('./sections/general/discuss.scss');
+@import url('./sections/general/form.scss');
+@import url('./sections/general/notchat.scss');
+@import url('./sections/general/question.scss');
+@import url('./sections/general/reviews.scss');
+@import url('./sections/general/seo.scss');
+@import url('./sections/general/work.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
 
 /* Home */
-/* @import url('./sections/home/wholesaler.scss'); */
+@import url('./sections/home/guarantee.scss');
+@import url('./sections/home/hero.scss');
+@import url('./sections/home/info.scss');
+@import url('./sections/home/rule.scss');
+@import url('./sections/home/services.scss');
+
+/* Internal */
+@import url('./sections/internal/internal.scss');
+@import url('./sections/internal/guarantgive.scss');
+@import url('./sections/internal/generalinf.scss');
+@import url('./sections/internal/advantag.scss');
+@import url('./sections/internal/executor.scss');
+@import url('./sections/internal/price.scss');
+
+/* Help */
+@import url('./sections/help/help.scss');
+
+/* Contact */
+@import url('./sections/contact/contact.scss');
+
+/* Feedback */
+@import url('./sections/feedback/feedback.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
