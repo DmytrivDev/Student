@@ -1,9 +1,10 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
+  transition: all 150ms ease-in;
 
   &__body {
     position: relative;
@@ -29,6 +30,7 @@
 }
 
 .burger-menu {
+  display: none;
 }
 .custom-logo-link {
   display: block;
@@ -38,5 +40,25 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+}
+
+.custom-logo-link {
+  .logo-scroll {
+    display: none;
+  }
+}
+
+.scroll-down {
+  position: fixed;
+  background-color: var(--cx);
+
+  .custom-logo-link {
+    .logo-def {
+      display: none;
+    }
+    .logo-scroll {
+      display: block;
+    }
   }
 }
