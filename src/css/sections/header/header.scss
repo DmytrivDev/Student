@@ -2,15 +2,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 15;
   width: 100%;
   transition: all 150ms ease-in;
 
-  &__body {
+  &__top {
+    padding: 2rem 0;
     position: relative;
+    z-index: 15;
+  }
+  &__body {
     display: flex;
     align-items: center;
-    padding: 2rem 0;
   }
   &__nav {
   }
@@ -19,6 +22,7 @@
     align-items: center;
     gap: 0.75rem;
     margin-left: 2rem;
+    transition: all 150ms ease-in;
     a {
       width: 2.5rem;
       height: 2.5rem;
@@ -26,6 +30,9 @@
       justify-content: center;
       align-items: center;
     }
+  }
+  &__btn-mob {
+    display: none;
   }
 }
 
@@ -59,6 +66,123 @@
     }
     .logo-scroll {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: fixed;
+    &__nav {
+      display: none;
+    }
+    &__top {
+      padding: 0.75rem 0;
+      background-color: var(--cf);
+    }
+    &__soc {
+      margin-left: 0;
+      a {
+        width: 2rem;
+        height: 2rem;
+      }
+      &.is-opened {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    &__btn-mob {
+      position: absolute;
+      left: calc(50% - 1.25rem);
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      visibility: hidden;
+      opacity: 0;
+      display: block;
+      text-align: center;
+      padding: 0.34rem 1.84rem;
+      width: fit-content;
+      border-radius: 2.5rem;
+      background-color: var(--cy);
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.71;
+      transition: all 150ms ease-in;
+      color: var(--cm);
+      &:hover,
+      &:focus {
+        background-color: var(--cp);
+        color: var(--cw);
+      }
+    }
+  }
+
+  .custom-logo-link {
+    width: 8.1875rem;
+    position: relative;
+    left: calc(50% - 1.625rem);
+    transform: translateX(-50%);
+    .logo-def {
+      transition: all 150ms ease-in;
+    }
+  }
+  .burger-menu {
+    position: relative;
+    display: block;
+    width: 1.625rem;
+    height: 1.125rem;
+    transition: all 150ms ease-in;
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: 0.125rem;
+      background-color: var(--cw);
+      transform: translateX(-50%) translateY(-50%) rotate(0);
+      transition: all 150ms ease-in;
+      &:first-child {
+        top: 0;
+        transform: translateX(-50%) translateY(0%);
+      }
+      &:last-child {
+        top: 100%;
+        transform: translateX(-50%) translateY(-100%);
+      }
+    }
+    &.is-opened {
+      span {
+        top: 50%;
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .scroll-down {
+    background-color: var(--cf);
+
+    .header__btn-mob {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .custom-logo-link {
+      .logo-def {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .logo-scroll {
+        display: none;
+      }
     }
   }
 }

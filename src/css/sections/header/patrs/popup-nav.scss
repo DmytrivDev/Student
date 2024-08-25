@@ -1,66 +1,68 @@
-.popup-nav {
-  position: absolute;
-  z-index: 10;
-  top: calc(100% - 1rem);
-  left: 0;
-  width: 100%;
-  background-color: var(--cw);
-  border-radius: 0.9375rem;
-  padding: 1.75rem 2.5rem 1.3rem 2.5rem;
-
-  &__body {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+.header__nav {
+  .popup-nav {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% - 1rem);
+    left: 0;
     width: 100%;
-    padding: 0.6rem 1.88rem;
-    border-right: 0.0625rem solid var(--ce);
-    &:first-child {
-      padding-left: 0;
-      padding-right: 1.88rem;
-    }
-    &:last-child {
-      padding-left: 1.88rem;
-      padding-right: 0;
-      border-right: none;
-    }
-    a {
+    background-color: var(--cw);
+    border-radius: 0.9375rem;
+    padding: 1.75rem 2.5rem 1.3rem 2.5rem;
+
+    &__body {
       display: flex;
-      align-items: start;
       justify-content: space-between;
-      transition: all 150ms ease-in;
-      &:hover {
-        .popup-nav__name {
-          color: var(--ch);
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      width: 100%;
+      padding: 0.6rem 1.88rem;
+      border-right: 0.0625rem solid var(--ce);
+      &:first-child {
+        padding-left: 0;
+        padding-right: 1.88rem;
+      }
+      &:last-child {
+        padding-left: 1.88rem;
+        padding-right: 0;
+        border-right: none;
+      }
+      a {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        transition: all 150ms ease-in;
+        &:hover {
+          .popup-nav__name {
+            color: var(--ch);
+          }
         }
       }
     }
-  }
-  &__name,
-  &__price {
-    color: var(--cm);
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    font-size: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  &__name {
-    width: 13.625rem;
-    transition: all 150ms ease-in;
-  }
-  &__price {
-    text-align: start;
-    width: 6.1rem;
-    font-weight: 700;
-    span {
-      font-weight: 400;
-      color: var(--cg);
+    &__name,
+    &__price {
+      color: var(--cm);
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &__name {
+      width: 13.625rem;
+      transition: all 150ms ease-in;
+    }
+    &__price {
+      text-align: start;
+      width: 6.1rem;
+      font-weight: 700;
+      span {
+        font-weight: 400;
+        color: var(--cg);
+      }
     }
   }
 }
