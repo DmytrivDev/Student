@@ -111,6 +111,7 @@
     align-items: center;
     gap: 0.5rem;
     input {
+      width: 100%;
       padding: 1.125rem 1.25rem;
       font-size: 1rem;
       line-height: 1.5;
@@ -123,6 +124,12 @@
         border-color: var(--cf);
       }
     }
+  }
+  &__form-topic {
+    width: 16.25rem;
+  }
+  &__form-phone {
+    width: 13.25rem;
   }
   &__address {
     margin-left: 2rem;
@@ -167,6 +174,9 @@
   }
   .nav__form {
     display: flex;
+  }
+  .nav__address {
+    margin-left: 3.3rem;
   }
   .nav__tel {
     span {
