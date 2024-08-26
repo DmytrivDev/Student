@@ -14,6 +14,7 @@
   &__body {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &__nav {
   }
@@ -114,6 +115,10 @@
         background-color: var(--cp);
         color: var(--cw);
       }
+      &.is-opened {
+        visibility: hidden !important;
+        opacity: 0 !important;
+      }
     }
   }
 
@@ -124,6 +129,10 @@
     transform: translateX(-50%);
     .logo-def {
       transition: all 150ms ease-in;
+      &.is-opened {
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
     }
   }
   .burger-menu {

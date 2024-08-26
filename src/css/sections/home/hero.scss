@@ -1,4 +1,11 @@
 .hero {
   background-color: var(--cd);
-  padding: 14rem 0;
+  padding: 10.38rem 0 5.75rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    background-color: var(--cf);
+    padding: 5.5rem 0 1.19rem 0;
+  }
 }
