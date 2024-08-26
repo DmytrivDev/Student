@@ -1,0 +1,118 @@
+.footer {
+  &__top {
+    padding: 3.69rem 0 3.87rem 0;
+    background-color: var(--cm);
+  }
+  &__part {
+    display: flex;
+    flex-direction: column;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 18.4375rem);
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__title {
+    color: var(--cw);
+    font-size: 1.375rem;
+    line-height: 2.36;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 1.44rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+    a {
+      color: var(--cw);
+      line-height: 1.75;
+      transition: all 150ms ease-in;
+      &:hover {
+        color: var(--cx);
+      }
+    }
+  }
+  &__address-link {
+    color: var(--cw);
+    line-height: 1.62;
+    transition: all 150ms ease-in;
+    &:hover {
+      color: var(--cx);
+    }
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: var(--cw);
+      font-size: 1.375rem;
+      font-weight: 700;
+      line-height: 1.59;
+      text-transform: uppercase;
+      transition: all 150ms ease-in;
+      &:hover {
+        color: var(--cx);
+      }
+    }
+  }
+  &__sub-title {
+    color: var(--cw);
+    opacity: 0.5;
+    font-size: 1.125rem;
+    line-height: 2.88;
+    margin-bottom: 0.2rem;
+  }
+  &__soc {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    a {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__bottom {
+    padding: 0.5rem 0;
+    background-color: var(--ct);
+
+    p {
+      text-align: center;
+      color: var(--cw);
+      font-size: 0.875rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    &__top {
+      padding: 2.5rem 0;
+    }
+    &__body {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: stretch;
+      align-items: stretch;
+      gap: 2.5rem;
+    }
+    &__title {
+      margin-bottom: 1.25rem;
+    }
+    &__address-link {
+      max-width: 18.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    &__body {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
