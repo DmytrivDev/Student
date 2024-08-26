@@ -1,10 +1,15 @@
 const burger = document.querySelector('.burger-menu');
+
 const mobMenu = document.querySelector('.mob');
-// const navBtns = document.querySelectorAll('.nav-menu__btn_mob');
-// const navLinks = document.querySelectorAll('.nav-menu__link');
+const navLinks = document.querySelectorAll('.nav__link');
 const headerSoc = document.querySelector('.header__soc');
 const headerBtnMob = document.querySelector('.header__btn-mob');
 const logoDef = document.querySelector('.logo-def');
+
+const popupHeading = document.querySelector('.mob__nav .popup-nav__heading');
+const navPopupLink = document.querySelector('.mob__nav .nav__popup-link');
+const popupNav = document.querySelector('.mob__nav .popup-nav');
+
 const body = document.querySelector('body');
 
 function updateMobMenuBodyMargin() {
@@ -23,7 +28,8 @@ function toggleMenu() {
   headerSoc.classList.toggle('is-opened');
   headerBtnMob.classList.toggle('is-opened');
   logoDef.classList.toggle('is-opened');
-  body.classList.toggle('overhide');
+  body.classList.toggle('hideMob');
+  popupNav.classList.remove('is-active');
 }
 
 function closeMenu() {
@@ -32,7 +38,7 @@ function closeMenu() {
   headerSoc.classList.remove('is-opened');
   headerBtnMob.classList.remove('is-opened');
   logoDef.classList.remove('is-opened');
-  body.classList.remove('overhide');
+  body.classList.remove('hideMob');
 }
 
 export function initMenu() {
@@ -43,15 +49,35 @@ export function initMenu() {
     burger.addEventListener('click', toggleMenu);
   }
 
-  // if (navLinks) {
-  //   navLinks.forEach(link => {
-  //     link.addEventListener('click', closeMenu);
-  //   });
-  // }
+  if (navLinks) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+}
 
-  // if (navBtns) {
-  //   navBtns.forEach(btn => {
-  //     btn.addEventListener('click', closeMenu);
-  //   });
-  // }
+function togglePopupNav() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 960) {
+    popupNav.classList.toggle('is-active');
+  }
+}
+
+export function initPopupMenu() {
+  navPopupLink.addEventListener('click', function (event) {
+    console.log('object');
+    event.preventDefault();
+    togglePopupNav();
+  });
+
+  popupHeading.addEventListener('click', function () {
+    togglePopupNav();
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 960 && popupNav?.classList.contains('is-active')) {
+      popupNav.classList.remove('is-active');
+    }
+  });
 }
