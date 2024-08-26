@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 960px) {
   .header {
-    position: fixed;
+    // position: fixed;
     &__nav {
       display: none;
     }
@@ -176,8 +176,6 @@
   }
 
   .scroll-down {
-    background-color: var(--cf);
-
     .header__btn-mob {
       visibility: visible;
       opacity: 1;
