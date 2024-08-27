@@ -66,7 +66,6 @@ function togglePopupNav() {
 
 export function initPopupMenu() {
   navPopupLink.addEventListener('click', function (event) {
-    console.log('object');
     event.preventDefault();
     togglePopupNav();
   });
