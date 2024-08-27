@@ -1,0 +1,109 @@
+.info {
+  padding: 5.31rem 0 4.37rem 0;
+
+  &__body {
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 44.6875rem 1fr;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  &__item1 {
+    position: relative;
+  }
+  &__item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  &__content {
+    position: relative;
+    z-index: 5;
+  }
+  &__part1,
+  &__part2,
+  &__part3 {
+    position: relative;
+    padding: 1.5rem;
+    height: 100%;
+    background-color: var(--cf);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    p {
+      color: var(--cw);
+    }
+  }
+  &__part1 {
+    h2 {
+      color: var(--cw);
+      font-size: 2.75rem;
+      font-weight: 600;
+      line-height: 1.18;
+      max-width: 18rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      max-width: 15rem;
+    }
+  }
+  &__part2 {
+    h2 {
+      margin-bottom: 0.75rem;
+    }
+    p {
+      max-width: 11rem;
+    }
+  }
+  &__part3 {
+    h2 {
+      margin-bottom: 0.75rem;
+    }
+    p {
+      max-width: 17rem;
+    }
+  }
+  &__sub-title {
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.75rem;
+  }
+
+  &__smile {
+    position: absolute;
+    top: -5.75rem;
+    right: -24.75rem;
+    width: 60.4375rem;
+  }
+  &__man {
+    position: absolute;
+    bottom: 0;
+    right: 3.69rem;
+    width: 29.125rem;
+  }
+  &__img-list {
+    position: absolute;
+    bottom: -1.5rem;
+    right: -3.38rem;
+    width: 24.0625rem;
+  }
+  &__bot {
+    position: absolute;
+    z-index: 2;
+    bottom: 0.5rem;
+    right: 0.69rem;
+    width: 8rem;
+  }
+  &__blocked {
+    position: absolute;
+    z-index: 1;
+    top: -5rem;
+    right: -1.25rem;
+    width: 16.625rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
