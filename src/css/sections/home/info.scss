@@ -1,5 +1,5 @@
 .info {
-  padding: 5.31rem 0 4.37rem 0;
+  padding: 5.31rem 0 2.2rem 0;
 
   &__body {
   }
@@ -65,7 +65,6 @@
   }
   &__sub-title {
     font-weight: 600;
-    line-height: 1.5;
     text-transform: uppercase;
     opacity: 0.7;
     margin-bottom: 0.75rem;
@@ -106,4 +105,103 @@
 }
 
 @media screen and (max-width: 960px) {
+  .info {
+    padding: 3.75rem 0 2.575rem 0;
+
+    &__list {
+      grid-template-columns: 1fr;
+      justify-content: stretch;
+      gap: 0.75rem;
+    }
+    &__item1 {
+      overflow: hidden;
+      gap: 0.75rem;
+    }
+    &__item2 {
+      gap: 0.75rem;
+    }
+    &__part1,
+    &__part2,
+    &__part3 {
+      padding: 1.25rem;
+    }
+    &__part1 {
+      padding-bottom: 21.25rem;
+      h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+        max-width: 100%;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+    &__part2,
+    &__part3 {
+      height: auto;
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+    &__part3 {
+      padding-bottom: 3.63rem;
+    }
+
+    &__smile {
+      top: auto;
+      right: auto;
+      bottom: -7.81rem;
+      left: -7.63rem;
+      width: 47.0625rem;
+    }
+    &__man {
+      right: -1.94rem;
+      width: 24.4375rem;
+    }
+    &__img-list {
+      bottom: -0.19rem;
+      right: 1rem;
+      width: 12.625rem;
+    }
+    &__bot {
+      bottom: -1.63rem;
+      right: 1.13rem;
+    }
+    &__blocked {
+      top: auto;
+      bottom: -1.87rem;
+      right: -0.81rem;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .info {
+    &__part2 {
+      p {
+        max-width: 12.9375rem;
+      }
+    }
+    &__part3 {
+      p {
+        max-width: 17.125rem;
+      }
+    }
+    &__smile {
+      top: auto;
+      right: auto;
+      bottom: -7.81rem;
+      left: -14.63rem;
+    }
+    &__man {
+      right: -7.94rem;
+    }
+    &__img-list {
+      bottom: -0.19rem;
+      right: -1.62rem;
+    }
+  }
 }

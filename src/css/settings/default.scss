@@ -99,6 +99,15 @@ address {
   font-style: normal;
 }
 
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+}
+
 .main {
   flex-grow: 1;
 }
