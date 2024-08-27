@@ -108,7 +108,8 @@
       }
     }
     &__form-box {
-      display: flex;
+      display: grid;
+      grid-template-columns: 16.25rem 13.25rem;
       align-items: center;
       gap: 0.5rem;
       input {
@@ -125,12 +126,6 @@
           border-color: var(--cf);
         }
       }
-    }
-    &__form-topic {
-      width: 16.25rem;
-    }
-    &__form-phone {
-      width: 13.25rem;
     }
     &__address {
       margin-left: 2rem;
