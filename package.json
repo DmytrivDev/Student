@@ -19,6 +19,9 @@
   "author": "Andrii Dmytriv",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "axios": "^1.7.0",
+    "accordion-js": "^3.3.4",
     "i": "^0.3.7",
     "npm": "^10.7.0",
     "sass": "^1.72.0",
