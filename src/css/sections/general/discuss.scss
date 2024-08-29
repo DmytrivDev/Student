@@ -1,41 +1,197 @@
 .discuss {
   background-color: var(--cf);
   background-image: url("/img/decor/discuss_bg.jpg");
-  background-position: center;
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 
   &__body {
     padding: 3.75rem 0 3.0756rem 0;
+    display: flex;
+    gap: 9.25rem;
   }
   &__content {
-  }
-  &__form-mob {
+    position: relative;
+    width: 35.75rem;
   }
   &__input {
-  }
-  &__btn {
+    width: 100%;
+    padding: 1.125rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--cq);
+    border: 0.125rem solid #9726f3;
+    border-radius: 1rem;
+    transition: all 150ms ease-in;
+    &:hover,
+    &:focus {
+      border-color: var(--cx);
+    }
   }
   &__wrapp {
+    display: flex;
+    gap: 4.125rem;
   }
   &__img-wrapp {
+    position: relative;
+    span {
+      position: relative;
+      z-index: 1;
+      transform: rotate(9.275deg);
+      width: 6.75rem;
+      height: 8.75rem;
+      border-radius: 1.25rem;
+      background-color: var(--cn);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__vector {
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    width: 9.6875rem;
   }
   &__info {
+    margin-top: 2.1381rem;
+    h4 {
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.55;
+      margin-bottom: 0.25rem;
+    }
+    p {
+      opacity: 0.8;
+      color: #fff;
+      font-size: 0.875rem;
+      line-height: 1.42;
+      max-width: 19rem;
+    }
   }
   &__mess {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: -10.6rem;
+    width: 15.8125rem;
   }
   &__line {
+    position: absolute;
+    right: -5.86rem;
+    bottom: 1.4rem;
+    width: 8rem;
+    img {
+      width: 100%;
+    }
   }
-  &__form {
+  &__form,
+  &__form-mob {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
-}
+  &__form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__form-mob {
+    display: none;
+  }
 
-.title-second {
-}
-.btn-def {
+  .title-second {
+    margin-bottom: 1.6744rem;
+  }
+  .btn-def {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .discuss {
+    &__body {
+      padding: 2.5rem 0 2.57rem 0;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__wrapp {
+      align-items: center;
+      gap: 3.0362rem;
+      margin-top: 2.8344rem;
+    }
+    &__img-wrapp {
+      span {
+        width: 4.635rem;
+        height: 6.00831rem;
+      }
+    }
+    &__vector {
+      width: 6.6875rem;
+    }
+    &__info {
+      margin-top: 0;
+      h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        max-width: 100%;
+      }
+    }
+    &__mess {
+      right: -2.31rem;
+      top: -7.19rem;
+      width: 9.375rem;
+    }
+    &__line {
+      right: 0.71rem;
+      transform: rotate(-70deg) rotateY(180deg);
+      bottom: auto;
+      top: 4.3rem;
+      width: 4rem;
+    }
+    &__form {
+      display: none;
+    }
+    &__form-box {
+      gap: 0.75rem;
+    }
+    &__form-mob {
+      width: 100%;
+      gap: 1.25rem;
+      display: flex;
+    }
+
+    .title-second {
+      max-width: 30rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.25;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .discuss {
+    &__line {
+      transform: rotate(-60deg) rotateY(180deg);
+      top: 5.56rem;
+      width: 5.5rem;
+    }
+  }
 }
