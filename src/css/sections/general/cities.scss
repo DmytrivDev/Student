@@ -78,6 +78,8 @@
     }
   }
   &__list {
+    position: relative;
+    z-index: 1;
     max-width: 58rem;
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +103,8 @@
   }
 
   .title-first {
+    position: relative;
+    z-index: 1;
     text-align: center;
     max-width: 51rem;
     span {
