@@ -8,11 +8,10 @@ export default defineConfig(({ command }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
-    }, 
+    },
     root: 'src',
     build: {
       sourcemap: true,
-      outDir: 'public',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
