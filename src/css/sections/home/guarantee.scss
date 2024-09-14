@@ -96,6 +96,20 @@
     .splide__list {
       grid-template-columns: repeat(2, 1fr) !important;
     }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .guarantee {
+    .splide__list {
+      display: flex !important;
+      grid-template-columns: none;
+      gap: 0 !important;
+    }
+    .splide__slide {
+      width: 92% !important;
+    }
+
     .splide__pagination {
       display: flex !important;
       flex-wrap: nowrap !important;
@@ -124,19 +138,6 @@
         opacity: 0.5 !important;
         transform: none !important;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .guarantee {
-    .splide__list {
-      display: flex !important;
-      grid-template-columns: none;
-      gap: 0 !important;
-    }
-    .splide__slide {
-      width: 92% !important;
     }
   }
 }

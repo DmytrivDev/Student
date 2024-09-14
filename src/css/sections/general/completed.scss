@@ -93,6 +93,19 @@
     .splide__slide {
       padding: 1.25rem !important;
     }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .completed {
+    .splide__list {
+      display: flex !important;
+      grid-template-columns: none;
+      gap: 0 !important;
+    }
+    .splide__slide {
+      width: 92% !important;
+    }
 
     .splide__pagination {
       display: flex !important;
@@ -123,19 +136,6 @@
         opacity: 0.5 !important;
         transform: none !important;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .completed {
-    .splide__list {
-      display: flex !important;
-      grid-template-columns: none;
-      gap: 0 !important;
-    }
-    .splide__slide {
-      width: 92% !important;
     }
   }
 }
