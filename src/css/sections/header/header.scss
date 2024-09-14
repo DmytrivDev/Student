@@ -1,10 +1,26 @@
 .header {
-  position: absolute;
-  top: 0;
+  position: fixed;
   left: 0;
+  right: 0;
+  top: 0;
   z-index: 15;
   width: 100%;
-  transition: all 150ms ease-in;
+  transition: all 200ms ease-in-out;
+  transform: translateY(0);
+
+  &.is-fixed {
+    transform: translateY(calc(-100% - 0.0625rem));
+  }
+  &.scroll-down {
+    background-color: var(--cx);
+
+    .logo-def {
+      display: none;
+    }
+    .logo-scroll {
+      display: block;
+    }
+  }
 
   &__top {
     padding: 2rem 0;
@@ -54,20 +70,6 @@
 .custom-logo-link {
   .logo-scroll {
     display: none;
-  }
-}
-
-.scroll-down {
-  position: fixed;
-  background-color: var(--cx);
-
-  .custom-logo-link {
-    .logo-def {
-      display: none;
-    }
-    .logo-scroll {
-      display: block;
-    }
   }
 }
 

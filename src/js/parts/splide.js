@@ -1,12 +1,13 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-let splideInstance;
+let guaranteeSliderInstance;
+let completedSliderInstance;
 
-const instSecondSlider = () => {
-  const slider = document.querySelector('.splide');
+const instGuaranteeSlider = () => {
+  const slider = document.querySelector('.guarantee__splide');
 
-  if (slider && !splideInstance) {
+  if (slider && !guaranteeSliderInstance) {
     const options = {
       type: 'slide',
       speed: 1000,
@@ -18,21 +19,47 @@ const instSecondSlider = () => {
       gap: '1.25rem',
     };
 
-    splideInstance = new Splide(slider, options).mount();
+    guaranteeSliderInstance = new Splide(slider, options).mount();
   }
 };
 
-const destroySlider = () => {
-  if (splideInstance) {
-    splideInstance.destroy();
-    splideInstance = null;
+const instCompletedSlider = () => {
+  const slider = document.querySelector('.completed__splide');
+
+  if (slider && !completedSliderInstance) {
+    const options = {
+      type: 'slide',
+      speed: 1000,
+      updateOnMove: true,
+      pagination: true,
+      arrows: false,
+      perPage: 1,
+      perMove: 1,
+      gap: '1.25rem',
+    };
+
+    completedSliderInstance = new Splide(slider, options).mount();
+  }
+};
+
+const destroySliders = () => {
+  if (guaranteeSliderInstance) {
+    guaranteeSliderInstance.destroy();
+    guaranteeSliderInstance = null;
+  }
+
+  if (completedSliderInstance) {
+    completedSliderInstance.destroy();
+    completedSliderInstance = null;
   }
 };
 
 const checkViewport = () => {
-  instSecondSlider();
+  instGuaranteeSlider();
+  instCompletedSlider();
+
   if (window.innerWidth > 760) {
-    destroySlider();
+    destroySliders();
   }
 };
 
