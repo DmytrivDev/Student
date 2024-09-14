@@ -1,0 +1,142 @@
+.question {
+  padding: 5rem 0 5.62rem 0;
+  background-color: var(--cu);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__list {
+    padding: 0 4.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    h5 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    span {
+      width: 2.5rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+      background-color: var(--cf);
+      border-radius: 50%;
+      transition: all 0.15s ease-in;
+      background-size: 1.66669rem 1.66669rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.9999 6.22241V21.778M6.22217 14.0002H21.7777' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+  }
+  &__subtitle {
+  }
+  &__panel {
+    padding-top: 0;
+    transition: all 0.3s ease-in;
+    color: var(--co);
+  }
+
+  .title-first {
+    position: relative;
+    width: 32.25rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    span {
+      position: absolute;
+      bottom: -0.37rem;
+      right: 4rem;
+      width: 4.25rem;
+      height: 4.25rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .ac {
+    margin: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+
+    &.is-active {
+      .question__box {
+        span {
+          background-size: 1.45rem 1.45rem;
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 12L20 12' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+        }
+      }
+      .question__panel {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .ac-trigger {
+    background-color: var(--cw) !important;
+    padding: 1.5rem !important;
+    border-radius: 1.25rem !important;
+    font: inherit !important;
+    color: inherit !important;
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .ac-panel {
+    padding-right: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .question {
+    padding: 3.75rem 0;
+
+    &__list {
+      padding: 0;
+    }
+    &__box {
+      align-items: start;
+      gap: 1.5rem;
+      h5 {
+        font-size: 1rem;
+      }
+    }
+    &__panel {
+      font-size: 0.875rem;
+      line-height: 1.35;
+    }
+
+    .title-first {
+      width: 21.875rem;
+      font-size: 2rem;
+      line-height: 1.25;
+      margin-bottom: 2.94rem;
+      span {
+        bottom: -0.44rem;
+        right: 3rem;
+        width: 3.0625rem;
+        height: 3.0625rem;
+      }
+    }
+
+    .ac {
+      &.is-active {
+        .question__panel {
+          padding-top: 0.75rem !important;
+        }
+      }
+    }
+
+    .ac-panel {
+      padding-right: 4rem !important;
+    }
+  }
+}
