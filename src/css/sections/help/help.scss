@@ -1,0 +1,255 @@
+.help {
+  overflow: hidden;
+  padding-top: 7.62rem;
+  background-color: var(--cf);
+
+  &__body {
+    position: relative;
+  }
+  &__content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: start;
+    gap: 11.06rem;
+    padding: 0.94rem 0 11.32rem 0;
+  }
+
+  &__info {
+    position: relative;
+    width: 29.3125rem;
+    padding-top: 2.81rem;
+    flex-shrink: 0;
+  }
+  &__like {
+    position: absolute;
+    bottom: -0.7rem;
+    right: 8rem;
+    transform: rotate(11.066deg);
+    width: 3.9106rem;
+  }
+  &__subtitle {
+    color: var(--cw);
+    font-weight: 600;
+    margin-bottom: 0.12rem;
+  }
+  &__mail {
+    opacity: 0.5;
+    color: var(--cw);
+    font-size: 1.125rem;
+    line-height: 1.55;
+  }
+  &__soc {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+    li {
+      &:last-child {
+        a {
+          &::before {
+            width: 1.36956rem;
+            height: 1.5rem;
+            background-size: 1.36956rem 1.5rem;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' viewBox='0 0 23 24' fill='none'%3E%3Cpath d='M17.2531 0.569649C13.2759 -0.189883 9.14565 -0.189883 5.16842 0.569649C3.40926 0.949415 1.19118 3.07611 0.808756 4.74708C0.120388 8.01306 0.120388 11.355 0.808756 14.621C1.26767 16.292 3.48574 18.4187 5.16842 18.7984C5.2449 18.7984 5.32139 18.8744 5.32139 18.9503V23.7354C5.32139 23.9632 5.62733 24.1151 5.7803 23.8873L8.07486 21.5327C8.07486 21.5327 9.91051 19.6339 10.2164 19.3301C10.2164 19.3301 10.2929 19.2541 10.3694 19.2541C12.664 19.3301 15.035 19.1022 17.3296 18.7225C19.0887 18.3427 21.3068 16.216 21.6892 14.545C22.3776 11.2791 22.3776 7.93711 21.6892 4.67112C21.2303 3.07611 19.0123 0.949415 17.2531 0.569649ZM17.3296 14.8489C16.9472 15.6084 16.4882 16.216 15.7234 16.5958C15.4939 16.6717 15.2645 16.7477 15.035 16.8236C14.7291 16.7477 14.4996 16.6717 14.2702 16.5958C11.8226 15.6084 9.52808 14.2412 7.69244 12.2664C6.69813 11.1271 5.85679 9.83594 5.16842 8.46878C4.86248 7.7852 4.55654 7.17758 4.32708 6.494C4.09762 5.88637 4.48005 5.27875 4.86248 4.82303C5.2449 4.36731 5.70382 4.0635 6.23921 3.83564C6.62164 3.60778 7.00407 3.75968 7.31001 4.0635C7.92189 4.82303 8.53377 5.58256 8.99268 6.41805C9.29863 6.94972 9.22214 7.55734 8.68674 7.93711C8.53377 8.01306 8.45729 8.08902 8.30432 8.24092C8.22783 8.31688 8.07486 8.39283 7.99837 8.54473C7.8454 8.7726 7.8454 9.00046 7.92189 9.22832C8.53377 10.9752 9.68105 12.3424 11.4402 13.1019C11.7462 13.2538 11.9756 13.3298 12.358 13.3298C12.8934 13.2538 13.1229 12.6462 13.5053 12.3424C13.8877 12.0386 14.3467 12.0386 14.8056 12.2664C15.188 12.4943 15.5704 12.7981 16.0293 13.1019C16.4118 13.4057 16.7942 13.6336 17.1766 13.9374C17.4061 14.0893 17.4826 14.4691 17.3296 14.8489ZM14.1172 9.15236C13.9642 9.15236 14.0407 9.15236 14.1172 9.15236C13.8113 9.15236 13.7348 9.00046 13.6583 8.7726C13.6583 8.62069 13.6583 8.39283 13.5818 8.24092C13.5053 7.93711 13.3524 7.6333 13.0464 7.40544C12.8934 7.32949 12.7405 7.25353 12.5875 7.17758C12.358 7.10162 12.2051 7.10163 11.9756 7.10163C11.7462 7.02567 11.6697 6.87377 11.6697 6.64591C11.6697 6.494 11.8991 6.34209 12.0521 6.34209C13.2759 6.41805 14.1937 7.10162 14.3467 8.54473C14.3467 8.62069 14.3467 8.7726 14.3467 8.84855C14.3467 9.00046 14.2702 9.15236 14.1172 9.15236ZM13.3523 5.81042C12.9699 5.65851 12.5875 5.50661 12.1286 5.43065C11.9756 5.43065 11.7462 5.3547 11.5932 5.3547C11.3637 5.3547 11.2108 5.20279 11.2872 4.97494C11.2872 4.74708 11.4402 4.59517 11.6697 4.67112C12.4345 4.74708 13.1229 4.89898 13.8113 5.2028C15.188 5.88637 15.9529 7.02567 16.1823 8.54473C16.1823 8.62069 16.1823 8.69664 16.1823 8.7726C16.1823 8.9245 16.1823 9.07641 16.1823 9.30427C16.1823 9.38022 16.1823 9.45618 16.1823 9.53213C16.1058 9.83594 15.5704 9.9119 15.4939 9.53213C15.4939 9.45618 15.4175 9.30427 15.4175 9.22832C15.4175 8.54474 15.2645 7.86116 14.9585 7.25353C14.4996 6.56995 13.9642 6.11423 13.3523 5.81042ZM17.4826 10.3676C17.2531 10.3676 17.1001 10.1398 17.1001 9.9119C17.1001 9.45618 17.0236 9.00045 16.9472 8.54473C16.6412 6.11423 14.6526 4.13945 12.2816 3.75968C11.8991 3.68373 11.5167 3.68373 11.2108 3.60778C10.9813 3.60778 10.6754 3.60778 10.5989 3.30397C10.5224 3.07611 10.7518 2.84825 10.9813 2.84825C11.0578 2.84825 11.1343 2.84825 11.1343 2.84825C11.2872 2.84825 14.2702 2.9242 11.1343 2.84825C14.3467 2.9242 17.0236 5.05089 17.559 8.24092C17.6355 8.7726 17.712 9.30427 17.712 9.9119C17.865 10.1398 17.712 10.3676 17.4826 10.3676Z' fill='white'/%3E%3C/svg%3E");
+          }
+        }
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 12.5rem;
+      height: 3.75rem;
+      border-radius: 1rem;
+      border: 0.0313rem solid var(--cw);
+      color: var(--cw);
+      font-weight: 600;
+      transition: all 0.15s ease-in;
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        width: 1.39706rem;
+        height: 1.25rem;
+        background-size: 1.39706rem 1.25rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='20' viewBox='0 0 23 20' fill='none'%3E%3Cpath d='M22.9255 0.7085L19.3897 19.1674C19.3897 19.1674 18.8949 20.4472 17.5359 19.8334L9.37789 13.356L9.34006 13.3369C10.442 12.3122 18.9871 4.35607 19.3606 3.99544C19.9387 3.4369 19.5798 3.10439 18.9085 3.5263L6.28638 11.827L1.41679 10.1303C1.41679 10.1303 0.65046 9.84803 0.576737 9.23424C0.502044 8.61945 1.44201 8.28694 1.44201 8.28694L21.2938 0.222291C21.2938 0.222291 22.9255 -0.520082 22.9255 0.7085Z' fill='%23FEFEFE'/%3E%3C/svg%3E");
+      }
+      &:hover {
+        background-color: var(--cc);
+      }
+    }
+  }
+  &__elemob {
+    display: none;
+  }
+  &__line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7.1875rem;
+    transform: translateX(100%);
+  }
+
+  &__wrapp {
+    position: relative;
+    border-radius: 1.5rem;
+    background-color: var(--cx);
+    padding: 3.13rem;
+    flex-shrink: 0;
+    width: 31.25rem;
+  }
+  &__desc {
+    font-size: 0.875rem;
+    line-height: 1.42;
+    margin-bottom: 1.5rem;
+  }
+  &__form {
+  }
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__label {
+    input {
+      padding: 1.12rem 1rem;
+      width: 100%;
+      border-radius: 1rem;
+      border: 0.125rem solid var(--cc);
+      background-color: var(--cw);
+      color: var(--cm);
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: all 0.15s ease-in;
+      &::placeholder {
+        color: rgba(31, 25, 57, 0.5);
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      &:focus,
+      &:hover {
+        border-color: var(--cf);
+      }
+    }
+  }
+  &__btn {
+    font-size: 1rem;
+    line-height: 1.5;
+    &.bp {
+      width: 100%;
+    }
+  }
+  &__smile {
+    position: absolute;
+    bottom: -10rem;
+    right: -7.5rem;
+    width: 15.0625rem;
+  }
+
+  &__vector {
+    position: absolute;
+    z-index: 1;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95.375rem;
+  }
+  &__filter {
+    position: absolute;
+    z-index: 2;
+    top: -18.4rem;
+    right: -30.87rem;
+    width: 61.5rem;
+    height: 77.5625rem;
+    border-radius: 77.5625rem;
+    opacity: 0.2;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffd306 0%,
+      rgba(255, 211, 6, 0) 100%
+    );
+    filter: blur(40px);
+  }
+
+  .title-first {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .help {
+    padding-top: 4.92rem;
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding: 2.52rem 0 3.75rem 0;
+    }
+
+    &__info {
+      width: 100%;
+      max-width: 21.875rem;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    &__like {
+      bottom: -0.7rem;
+      right: 3rem;
+      width: 2.5225rem;
+    }
+    &__soc {
+      display: none;
+      &.help__elemob {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        li {
+          width: 100%;
+          max-width: 15.5rem;
+        }
+        a {
+          width: 100%;
+          max-width: 15.5rem;
+        }
+      }
+    }
+    &__line {
+      bottom: -1.5rem;
+      left: -6rem;
+      right: auto;
+      width: 5rem;
+      transform: translateX(100%) rotate(45deg);
+    }
+
+    &__wrapp {
+      padding: 1.87rem 1.56rem 2.5rem 1.56rem;
+      width: 100%;
+      max-width: 32rem;
+    }
+    &__desc {
+      padding-right: 1.5rem;
+    }
+    &__smile {
+      bottom: auto;
+      top: -3rem;
+      right: -1.94rem;
+      width: 7.0625rem;
+    }
+
+    .title-first {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+}
