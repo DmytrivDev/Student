@@ -9,6 +9,9 @@ const logoDef = document.querySelector('.logo-def');
 const popupHeading = document.querySelector('.mob__nav .popup-nav__heading');
 const navPopupLink = document.querySelector('.mob__nav .nav__popup-link');
 const popupNav = document.querySelector('.mob__nav .popup-nav');
+const popupNavListLink = document.querySelectorAll(
+  '.mob__nav .popup-nav__list a'
+);
 
 const body = document.querySelector('body');
 
@@ -72,6 +75,12 @@ export function initPopupMenu() {
 
   popupHeading.addEventListener('click', function () {
     togglePopupNav();
+  });
+
+  popupNavListLink.forEach(link => {
+    link.addEventListener('click', function () {
+      popupNav.classList.remove('is-active');
+    });
   });
 
   window.addEventListener('resize', function () {

@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scrollTop > lastScrollTop) {
       header.classList.add('is-fixed');
 
-      setTimeout(() => {
-        header.classList.remove('scroll-down');
-      }, 200);
+      // setTimeout(() => {
+      //   header.classList.remove('scroll-down');
+      // }, 200);
     } else {
       header.classList.remove('is-fixed');
       header.classList.add('scroll-down');
