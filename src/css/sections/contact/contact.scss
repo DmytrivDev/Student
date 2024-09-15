@@ -1,0 +1,123 @@
+.contact {
+  padding-top: 7.62rem;
+  background-color: var(--ck);
+
+  &__body {
+    padding: 5.62rem 0 6.25rem 0;
+  }
+
+  &__subtitle {
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.25rem;
+    margin-top: 3.13rem;
+  }
+  &__item {
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--cx);
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+      background-color: var(--cb);
+      .contact__icon-wrapp {
+        top: 3.125rem;
+        right: 1.9212rem;
+        width: 4.51075rem;
+        transform: rotate(12.769deg);
+      }
+    }
+    &:last-child {
+      background-color: var(--cf);
+      .contact__icon-wrapp {
+        top: 2.12rem;
+        right: 1.87rem;
+        width: 3.25rem;
+        transform: rotate(0);
+      }
+      .title-second {
+        color: var(--cw);
+      }
+      .contact__address {
+        color: var(--cw);
+        font-size: 1.125rem;
+        line-height: 1.55;
+        margin-bottom: 0.75rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .contact__desc {
+        color: var(--cw);
+      }
+    }
+  }
+  &__box {
+    position: relative;
+    z-index: 3;
+    flex-grow: 1;
+  }
+  &__address {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.16;
+    margin-bottom: 0.25rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__desc {
+    font-size: 0.875rem;
+    line-height: 1.42;
+    margin-bottom: 0.75rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon-wrapp {
+    position: absolute;
+    top: 2.1313rem;
+    right: 2.085rem;
+    z-index: 2;
+    width: 4.40888rem;
+    transform: rotate(17.814deg);
+  }
+  &__vector {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__soc {
+    margin-top: 6.87rem;
+  }
+
+  .title-first {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+  .title-second {
+    margin-bottom: 0.75rem;
+  }
+  .btn-def {
+    position: relative;
+    z-index: 2;
+    color: var(--cf);
+    padding: 0.88rem 0;
+    width: 100%;
+    background-color: var(--cw);
+    margin-top: 2.25rem;
+    &:hover,
+    &:focus {
+      background-color: var(--cp);
+      color: var(--cw);
+    }
+  }
+}

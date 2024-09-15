@@ -18,6 +18,8 @@
 @import url('./sections/general/seo.scss');
 @import url('./sections/general/work.scss');
 
+@import url('./sections/general/headerStyles.scss');
+
 /* Header */
 @import url('./sections/header/header.scss');
 @import url('./sections/header/patrs/nav.scss');
