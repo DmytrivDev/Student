@@ -246,6 +246,14 @@
       width: 7.0625rem;
     }
 
+    &__vector {
+      top: 6.6rem;
+      left: 23%;
+    }
+    &__filter {
+      display: none;
+    }
+
     .title-first {
       text-align: center;
       font-size: 2rem;
