@@ -1,0 +1,186 @@
+.internal {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--cd);
+
+  &__body {
+    position: relative;
+    padding: 7.625rem 0 5.56rem 0;
+  }
+  &__content {
+    position: relative;
+    z-index: 6;
+    width: 48.8125rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3.5rem;
+    margin-top: 1.62rem;
+    li {
+      display: flex;
+      gap: 1.25rem;
+    }
+  }
+  &__icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info {
+  }
+  &__price {
+    color: var(--cx);
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.06;
+    span {
+      color: var(--cw);
+      opacity: 0.5;
+      text-decoration: line-through;
+      font-weight: 300;
+    }
+  }
+  &__desc {
+    color: var(--cw);
+    line-height: 1.25;
+  }
+  &__text {
+    margin-top: 3.69rem;
+    color: var(--cw);
+    font-size: 1.125rem;
+    line-height: 1.55;
+  }
+
+  &__girl {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    right: -15rem;
+    width: 58.375rem;
+  }
+  &__stars {
+    position: absolute;
+    z-index: 3;
+    width: 5.3125rem;
+    top: 9.19rem;
+    right: 20.4375rem;
+  }
+  &__vector {
+    position: absolute;
+    top: -2.63rem;
+    right: -12rem;
+    z-index: 1;
+    width: 47.125rem;
+  }
+
+  &__filter {
+    position: absolute;
+    z-index: 3;
+    right: -7.13rem;
+    bottom: -37rem;
+    width: 53.0625rem;
+    height: 77.5625rem;
+    border-radius: 77.5625rem;
+    opacity: 0.5;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffd306 0%,
+      rgba(255, 211, 6, 0) 100%
+    );
+    filter: blur(40px);
+  }
+  &__filter-mob {
+    display: none;
+  }
+
+  .title-first {
+    margin-top: 4.25rem;
+    max-width: 37rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .internal {
+    background-color: var(--cf);
+
+    &__body {
+      padding: 5.3125rem 0 2.44rem 0;
+    }
+    &__content {
+      width: auto;
+    }
+
+    &__list {
+      margin-top: 1.5rem;
+      gap: 1.25rem 1.5rem;
+      li {
+        gap: 0.75rem;
+      }
+    }
+    &__price {
+      font-size: 1.5rem;
+      line-height: 1.33;
+      span {
+        font-size: 1.25rem;
+      }
+    }
+    &__text {
+      margin-top: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.42;
+      padding-right: 8.25rem;
+    }
+
+    &__girl {
+      width: 30.5625rem;
+      right: -12rem;
+    }
+    &__stars {
+      width: 2.3125rem;
+      right: 1.25rem;
+      top: 13rem;
+    }
+    &__vector {
+      top: -0.7em;
+      right: -21rem;
+      width: 42.125rem;
+    }
+
+    &__filter {
+      width: 39.4375rem;
+      height: 57.6875rem;
+      border-radius: 57.6875rem;
+      bottom: -28.87rem;
+      right: -18.44rem;
+    }
+    &__filter-mob {
+      position: absolute;
+      z-index: 5;
+      display: block;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 7.75rem;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(125, 42, 235, 0) 0%,
+        rgba(125, 42, 235, 0.63) 100%
+      );
+    }
+
+    .title-first {
+      margin-top: 2rem;
+      line-height: 1.18;
+    }
+  }
+}
