@@ -12,9 +12,29 @@
     gap: 0.75rem;
     width: 41.4375rem;
     li {
+      display: flex;
+      align-items: start;
+      gap: 1.25rem;
       border-radius: 1.25rem;
       background-color: var(--cu);
       padding: 1.5rem;
+      p {
+        font-size: 1.5rem;
+        line-height: 1.33;
+      }
+      span {
+        color: var(--cf);
+      }
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        width: 1.4375rem;
+        height: 1.6875rem;
+        background-size: 1.4375rem 1.6875rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='28' viewBox='0 0 23 28' fill='none'%3E%3Cpath d='M11.5 0.0195312L11.7761 1.52917C12.8463 7.3792 17.2333 12.0658 23 13.5195C17.2333 14.9732 12.8463 19.6599 11.7762 25.5099L11.5 27.0195L11.2239 25.5099C10.1537 19.6599 5.76669 14.9732 0 13.5195C5.76669 12.0658 10.1537 7.3792 11.2239 1.52917L11.5 0.0195312Z' fill='%23FFD300'/%3E%3C/svg%3E");
+      }
     }
   }
   &__wrapp {
