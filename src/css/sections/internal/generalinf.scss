@@ -1,0 +1,168 @@
+.generalinf {
+  &__wrapp {
+    position: relative;
+  }
+  &__body {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: start;
+    padding: 3.75rem 0 8.25rem 0;
+  }
+  &__content {
+    width: 45.1875rem;
+  }
+  &__text {
+    margin-bottom: 1.38rem;
+
+    p {
+      line-height: 1.625;
+      margin-bottom: 1rem;
+      span {
+        font-weight: 600;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__cards {
+    position: absolute;
+    top: 5.72rem;
+    right: 2.37rem;
+    width: 26.5rem;
+    height: 37.5rem;
+  }
+  &__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26.5rem;
+    height: 37.5rem;
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+
+    &:nth-child(1) {
+      transform: rotate(-3.519deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(7deg);
+    }
+    li {
+      padding: 1.25rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: space-between;
+      border-bottom: 0.0625rem solid var(--rcl);
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        width: 1.75rem;
+        height: 1.75rem;
+        background-size: 1.75rem 1.75rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='33' viewBox='0 0 32 33' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.2469 3.98152C10.342 3.11692 4.04361 8.01352 3.179 14.9184C2.31439 21.8233 7.211 28.1216 14.1159 28.9863C21.0208 29.8509 27.3191 24.9543 28.1837 18.0494C29.0483 11.1445 24.1518 4.84613 17.2469 3.98152ZM19.092 13.6492C19.5073 13.2308 20.1828 13.2283 20.6013 13.6435C21.0195 14.0587 21.0221 14.7344 20.607 15.1528L15.6773 20.1196L15.6765 20.1205C15.5086 20.2897 15.3129 20.487 15.1228 20.6311C14.8959 20.803 14.5301 21.0156 14.0415 20.9788C13.5529 20.942 13.223 20.6771 13.0244 20.4732C12.8577 20.302 12.6935 20.0772 12.5527 19.8844L10.8563 17.5648C10.5084 17.0889 10.612 16.4213 11.0878 16.0734C11.5636 15.7254 12.2313 15.829 12.5792 16.3048L14.224 18.5538L19.092 13.6492Z' fill='%23F2BCF3'/%3E%3Cpath d='M19.092 13.6492C19.5073 13.2308 20.1828 13.2283 20.6013 13.6435C21.0195 14.0587 21.0221 14.7344 20.607 15.1528L15.6773 20.1196L15.6765 20.1205C15.5086 20.2897 15.3129 20.487 15.1228 20.6311C14.8959 20.803 14.5301 21.0156 14.0415 20.9788C13.5529 20.942 13.223 20.6771 13.0244 20.4732C12.8577 20.302 12.6935 20.0772 12.5527 19.8844L10.8563 17.5648C10.5084 17.0889 10.612 16.4213 11.0878 16.0734C11.5636 15.7254 12.2313 15.829 12.5792 16.3048L14.224 18.5538L19.092 13.6492Z' fill='%237D2AEB'/%3E%3C/svg%3E");
+      }
+      p {
+        opacity: 0.8;
+        color: var(--cw);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: calc(50%);
+      }
+      span {
+        color: var(--cw);
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.55;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: calc(50%);
+        text-align: end;
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__hand {
+    position: absolute;
+    z-index: 5;
+    width: 10.75rem;
+    bottom: -3.4rem;
+    right: 24.7rem;
+  }
+
+  &__elemob {
+    display: none;
+  }
+
+  .title-second {
+    margin-bottom: 1.5rem;
+  }
+  .btn-def {
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .generalinf {
+    position: relative;
+
+    &__container {
+      position: relative;
+      overflow: hidden;
+    }
+    &__wrapp {
+      position: static;
+    }
+    &__body {
+      position: static;
+      padding: 3.6rem 0 37.94rem 0;
+      overflow: visible;
+    }
+    &__content {
+      width: auto;
+    }
+
+    &__cards {
+      top: auto;
+      right: auto;
+      width: 21.875rem;
+      bottom: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__card {
+      width: 21.875rem;
+      padding: 2.5rem 1.5rem;
+    }
+
+    &__hand {
+      display: none;
+      width: 7.89638rem;
+      right: auto;
+
+      bottom: -1.4rem;
+      left: 50%;
+      transform: translateX(-120%) rotate(-55.891deg);
+      &.generalinf__elemob {
+        display: block;
+      }
+    }
+
+    .title-second {
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+}
