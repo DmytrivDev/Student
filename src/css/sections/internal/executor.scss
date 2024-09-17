@@ -1,0 +1,36 @@
+.executor {
+  padding: 6.25rem 0 9.94rem 0;
+
+  &__body {
+  }
+  &__content {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 41.4375rem;
+    li {
+      border-radius: 1.25rem;
+      background-color: var(--cu);
+      padding: 1.5rem;
+    }
+  }
+  &__wrapp {
+  }
+  &__cards {
+    li {
+      position: relative;
+    }
+  }
+  &__hand {
+  }
+
+  .title-second {
+    margin-bottom: 5rem;
+    span {
+      color: var(--cf);
+    }
+  }
+}
