@@ -1,0 +1,268 @@
+.guarantgive {
+  padding: 3.94rem 0 3.75rem 0;
+
+  &__body {
+  }
+  &__list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    padding: 2.5rem;
+    box-shadow: 0.25rem 0.25rem 2.5rem 0 rgba(255, 255, 255, 0.2) inset;
+    backdrop-filter: blur(20px);
+    border-radius: 1.25rem;
+
+    &:nth-child(1) {
+      padding-top: 6.44rem;
+      padding-bottom: 6.44rem;
+
+      grid-column: 1 / 6;
+      grid-row: 1 / 3;
+      .guarantgive__text {
+        max-width: 15.1875rem;
+      }
+    }
+    &:nth-child(2) {
+      grid-column: 6 / 14;
+      grid-row: 1 / 2;
+      .guarantgive__text {
+        max-width: 20rem;
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 14 / 18;
+      grid-row: 1 / 2;
+    }
+    &:nth-child(4) {
+      grid-column: 6 / 10;
+      grid-row: 2 / 3;
+    }
+    &:nth-child(5) {
+      overflow: visible;
+      grid-column: 10 / 18;
+      grid-row: 2 / 3;
+      .guarantgive__text {
+        max-width: 17.8125rem;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 6;
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.33;
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__text {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__bg1 {
+    z-index: 1;
+    position: absolute;
+    top: -21.25rem;
+    right: -16.375rem;
+    width: 63.2119rem;
+  }
+  &__money1 {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    width: 26.5rem;
+  }
+  &__money2 {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: -31px;
+    width: 24.75rem;
+  }
+  &__filter1 {
+    z-index: 3;
+    position: absolute;
+    top: -13.59rem;
+    right: -21.34rem;
+    width: 37.77894rem;
+    height: 34.87631rem;
+    transform: rotate(-59.795deg);
+    border-radius: 37.77894rem;
+    opacity: 0.5;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ffd306 0%,
+      rgba(255, 211, 6, 0) 100%
+    );
+    filter: blur(40px);
+  }
+  &__filter2 {
+    z-index: 2;
+    position: absolute;
+    left: -8.3806rem;
+    bottom: -14.88rem;
+    width: 27.9785rem;
+    height: 25.82881rem;
+    transform: rotate(-59.795deg);
+    border-radius: 27.9785rem;
+    opacity: 0.5;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(125, 42, 235, 0.32) 0%,
+      rgba(125, 42, 235, 0) 100%
+    );
+    filter: blur(40px);
+  }
+
+  &__dec1 {
+    z-index: 1;
+    position: absolute;
+    bottom: 4rem;
+    right: 8rem;
+    width: 7.9431rem;
+  }
+  &__em1 {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    right: -2.7rem;
+    width: 14.75rem;
+  }
+
+  &__dec5 {
+    z-index: 5;
+    position: absolute;
+    top: 2.19rem;
+    right: 1.2rem;
+    width: 2.6875rem;
+  }
+  &__dec2 {
+    z-index: 1;
+    position: absolute;
+    right: -4.12rem;
+    bottom: -3rem;
+    width: 13.6875rem;
+  }
+
+  &__dec3 {
+    z-index: 5;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.2rem;
+    width: 3rem;
+  }
+
+  &__dec4 {
+    z-index: 4;
+    position: absolute;
+    top: 0.81rem;
+    right: 2.12rem;
+    width: 6.375rem;
+  }
+  &__dec6 {
+    z-index: 5;
+    position: absolute;
+    right: -3rem;
+    bottom: -4.75rem;
+    width: 13.1875rem;
+  }
+
+  .title-first {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .guarantgive {
+    padding: 3.75rem 0 3.6rem 0;
+
+    &__list {
+      gap: 1.25rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+    &__item {
+      grid-column: auto !important;
+      grid-row: auto !important;
+
+      &:nth-child(1) {
+        padding-bottom: 13.06rem;
+        .guarantgive__text {
+          max-width: 100%;
+          padding-right: 3rem;
+        }
+      }
+      &:nth-child(2) {
+        padding-bottom: 14rem;
+        .guarantgive__text {
+          max-width: 100%;
+        }
+      }
+      &:nth-child(5) {
+        .guarantgive__text {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__bg1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &__money1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &__money2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__dec4 {
+      width: 3.875rem;
+      right: 0.88rem;
+      top: 2rem;
+    }
+    &__dec6 {
+      width: 8rem;
+      bottom: -3.44rem;
+      right: 0;
+    }
+
+    .title-first {
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .guarantgive {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__dec1 {
+      right: 12rem;
+    }
+    &__em1 {
+      right: 1.7rem;
+    }
+  }
+}
