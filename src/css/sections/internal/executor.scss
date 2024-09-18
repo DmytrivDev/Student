@@ -7,6 +7,8 @@
     position: relative;
   }
   &__list {
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -38,19 +40,136 @@
     }
   }
   &__wrapp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32rem;
+    height: 32rem;
   }
   &__cards {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
     li {
-      position: relative;
+      overflow: hidden;
+      position: absolute;
+      border-radius: 1.25rem;
+
+      &:nth-child(1) {
+        width: 16.00125rem;
+        height: 16.5rem;
+        transform: rotate(14.096deg);
+        bottom: 3.5rem;
+        right: 2.7rem;
+      }
+      &:nth-child(2) {
+        width: 15.50144rem;
+        height: 15.44706rem;
+        transform: rotate(9.841deg);
+        bottom: 1.7rem;
+        right: 2rem;
+      }
+      &:nth-child(3) {
+        width: 16.80169rem;
+        height: 22.88194rem;
+        transform: rotate(-8.162deg);
+        div {
+          width: 20.6938rem;
+        }
+      }
+
+      div {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 14.9637rem;
+      }
     }
   }
   &__hand {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 7.5rem;
+    width: 8.1738rem;
+    transform: rotate(25.523deg);
   }
 
   .title-second {
     margin-bottom: 5rem;
     span {
       color: var(--cf);
+      text-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .executor {
+    padding: 3.75rem 0 0 0;
+
+    &__content {
+      padding-bottom: 28.48rem;
+    }
+
+    &__list {
+      width: 100%;
+      li {
+        p {
+          font-size: 1.125rem;
+          line-height: 1.55;
+        }
+      }
+    }
+
+    &__wrapp {
+      top: auto;
+      right: auto;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 40rem;
+      width: 100%;
+      height: 22rem;
+    }
+    &__cards {
+      li {
+        &:nth-child(1) {
+          width: 10.81913rem;
+          height: 11.15638rem;
+          bottom: 3.2rem;
+          right: 1rem;
+        }
+        &:nth-child(2) {
+          width: 10.48119rem;
+          height: 10.44444rem;
+          right: 0.5rem;
+        }
+        &:nth-child(3) {
+          width: 11.36038rem;
+          height: 15.4715rem;
+          left: 1rem;
+          div {
+            width: 13.6938rem;
+          }
+        }
+
+        div {
+          width: 10rem;
+        }
+      }
+    }
+    &__hand {
+      width: 5.5263rem;
+      right: auto;
+      left: 12.3rem;
+    }
+
+    .title-second {
+      margin-bottom: 2.5rem;
     }
   }
 }
