@@ -1,0 +1,191 @@
+.advantag {
+  background-color: var(--cu);
+  padding: 6.38rem 0 6.31rem 0;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1.25rem;
+    margin-bottom: 3.75rem;
+    li {
+      position: relative;
+      padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+      border-radius: 1.5rem;
+      min-height: 12.5rem;
+    }
+  }
+  &__headline {
+    font-size: 3.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  &__tagline {
+    display: block;
+    margin-top: -1.25rem;
+    line-height: 1.37;
+    padding: 0.375rem 1rem;
+    border-radius: 2.5rem;
+    background-color: var(--cw);
+    width: fit-content;
+  }
+  &__text {
+    margin-top: 1rem;
+    line-height: 1.37;
+    opacity: 0.6;
+    max-width: 16rem;
+  }
+
+  .design_1 {
+    background-color: var(--cx);
+    .advantag__tagline {
+      transform: rotate(2.512deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3.75rem;
+      right: 1.07rem;
+      width: 5.71706rem;
+      height: 4.36719rem;
+      background-size: 5.71706rem 4.36719rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("/img/decor/advantag_1.png");
+      transform: rotate(-28.977deg);
+    }
+  }
+  .design_2 {
+    background-color: var(--cb);
+    .advantag__tagline {
+      transform: rotate(-1.548deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 30.1875rem;
+      height: 10.4375rem;
+      background-size: 30.1875rem 10.4375rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='493' height='187' viewBox='0 0 493 187' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 168.336C109.176 115.557 319.424 10 327 10C336.471 10 42.8823 269.671 345.941 76.5011C296.484 143.002 255.655 243.704 488 114.502' stroke='white' stroke-opacity='0.2' stroke-width='20' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+  }
+  .design_3 {
+    background-color: var(--cf);
+    .advantag__headline,
+    .advantag__text {
+      color: var(--cw);
+    }
+    .advantag__tagline {
+      color: var(--cw);
+      background-color: var(--cm);
+      transform: rotate(5.286deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2.08rem;
+      right: 1rem;
+      width: 8.48025rem;
+      height: 5.92594rem;
+      background-size: 8.48025rem 5.92594rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("/img/decor/advantag_2.png");
+      transform: rotate(11.67deg);
+    }
+  }
+  .design_4 {
+    background-color: var(--cz);
+    .advantag__headline,
+    .advantag__text {
+      color: var(--cw);
+    }
+    .advantag__tagline {
+      color: var(--cw);
+      background-color: var(--cm);
+      transform: rotate(-1.963deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 1.7rem;
+      transform: translateY(-50%);
+      width: 9.5625rem;
+      height: 16.4375rem;
+      background-size: 9.5625rem 16.4375rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='174' height='270' viewBox='0 0 174 270' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M45.8792 1C44.6756 19.1379 38.2967 61.2179 22.4096 84.4345C67.8442 45.1356 149.326 -4.44138 111.774 111.641M111.774 111.641C74.2231 227.724 3.92302 206.866 11.5775 180.566C15.1856 158.8 45.3376 119.622 111.774 111.641ZM111.774 111.641C153.297 97.4333 209.444 108.014 101.845 264' stroke='white' stroke-opacity='0.2' stroke-width='20' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+  }
+  .design_5 {
+    background-color: var(--cw);
+    .advantag__text {
+      opacity: 1;
+    }
+    .advantag__tagline {
+      color: var(--cw);
+      background-color: var(--cf);
+      transform: rotate(5.286deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2.5rem;
+      right: 1.5rem;
+      width: 7.375rem;
+      height: 7.5625rem;
+      background-size: 7.375rem 7.5625rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("/img/decor/advantag_3.png");
+    }
+  }
+  .design_6 {
+    background-color: var(--cp);
+    .advantag__headline,
+    .advantag__text {
+      color: var(--cw);
+    }
+    .advantag__tagline {
+      color: var(--cw);
+      background-color: var(--cm);
+      transform: rotate(-1.123deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -1.7rem;
+      transform: translateY(-50%);
+      width: 12.75rem;
+      height: 16.1875rem;
+      background-size: 12.75rem 16.1875rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='224' height='266' viewBox='0 0 224 266' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.375 6C36.7852 11.3102 42.2059 39.6408 62.1326 69.1707M62.1326 69.1707C85.6648 104.044 129.427 140.59 214 142.87C198.818 110.232 147.189 49.7984 62.1326 69.1707ZM62.1326 69.1707C34.13 76.1897 5.325 109.811 114.125 188.142C93.5833 181.825 44 167.717 10 161.821C33.7292 184.633 80.975 237.205 80.125 265' stroke='white' stroke-opacity='0.4' stroke-width='20' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  .title-second {
+    text-align: center;
+    max-width: 61.875rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .advantag {
+  }
+}

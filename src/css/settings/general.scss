@@ -23,6 +23,12 @@ body {
   margin: 0 auto;
 }
 
+.internalColor {
+  .disciplin {
+    background-color: var(--cw);
+  }
+}
+
 @media screen and (max-width: 1320px) {
   html,
   body {
