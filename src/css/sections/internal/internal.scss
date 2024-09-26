@@ -6,6 +6,7 @@
   &__body {
     position: relative;
     padding: 7.625rem 0 5.56rem 0;
+    min-height: 40.12rem;
   }
   &__content {
     position: relative;
@@ -58,6 +59,7 @@
     color: var(--cw);
     font-size: 1.125rem;
     line-height: 1.55;
+    max-width: 43rem;
   }
 
   &__girl {
@@ -114,6 +116,7 @@
 
     &__body {
       padding: 5.3125rem 0 2.44rem 0;
+      min-height: 42.5rem;
     }
     &__content {
       width: auto;
@@ -127,7 +130,7 @@
       }
     }
     &__price {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1.33;
       span {
         font-size: 1.25rem;
@@ -137,7 +140,8 @@
       margin-top: 1.5rem;
       font-size: 0.875rem;
       line-height: 1.42;
-      padding-right: 8.25rem;
+      padding-right: 12rem;
+      max-width: inherit;
     }
 
     &__girl {

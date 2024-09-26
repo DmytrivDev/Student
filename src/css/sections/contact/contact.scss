@@ -78,6 +78,9 @@
     font-weight: 500;
     line-height: 1.66;
     margin-bottom: 0.25rem;
+    a {
+      color: var(--cm);
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -135,7 +138,7 @@
         background-repeat: no-repeat;
       }
 
-      &.teleg {
+      &.teleg, &.telegram {
         background-color: var(--cw);
         color: #3ab0e5;
         &::before {

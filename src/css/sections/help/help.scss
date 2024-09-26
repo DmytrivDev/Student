@@ -12,19 +12,19 @@
     z-index: 4;
     display: flex;
     align-items: start;
-    gap: 11.06rem;
+    gap: 9.06rem;
   }
 
   &__info {
     position: relative;
-    width: 29.3125rem;
+    width: 34.3125rem;
     padding-top: 2.81rem;
     flex-shrink: 0;
   }
   &__like {
     position: absolute;
     bottom: -0.7rem;
-    right: 8rem;
+    right: 13rem;
     transform: rotate(11.066deg);
     width: 3.9106rem;
   }
@@ -38,6 +38,9 @@
     color: var(--cw);
     font-size: 1.125rem;
     line-height: 1.55;
+    a {
+      color: var(--cw);
+    }
   }
   &__soc {
     display: flex;

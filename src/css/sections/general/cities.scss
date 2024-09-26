@@ -93,6 +93,22 @@
       font-weight: 600;
       line-height: 1.875;
       padding: 0.25rem 0.875rem;
+      overflow: hidden;
+    }
+    &.linked {
+      li {
+        padding: 0;
+        a {
+          display: inline-block;
+          padding: 0.25rem 0.875rem;
+          color: var(--cw);
+          transition: .3s;
+          &:hover {
+            color: var(--cm);
+            background-color: var(--cw);
+          }
+        }
+      }
     }
   }
   &__stars {

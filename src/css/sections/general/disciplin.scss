@@ -35,6 +35,15 @@
     li {
       line-height: 1.75;
       text-transform: capitalize;
+
+      a {
+        color: var(--cm);
+        transition: .3s;
+
+        &:hover {
+          color: var(--cy);
+        }
+      }
     }
   }
 

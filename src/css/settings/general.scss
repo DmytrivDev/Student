@@ -6,6 +6,10 @@ body {
   line-height: 1.5;
 }
 
+input, textarea {
+  font-family: var(--ff);
+}
+
 .overhide {
   overflow: hidden;
 }
