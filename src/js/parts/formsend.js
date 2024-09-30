@@ -1,5 +1,7 @@
 import axios from "axios";
 
+import { openModal } from "./modal";
+
 const telFields = document.querySelectorAll('input[type="tel"]');
 const sendButtons = document.querySelectorAll('.sendButton');
 
@@ -63,14 +65,13 @@ function sendFormData(form) {
   axios
     .post('/wp-content/themes/student/mail.php', formData)
     .then(function (response) {
-      const successModal = document.getElementById('successCall');
       const formModal = document.getElementById('callbackCall');
 
       formModal.classList.remove('is-visible');
       formModal.classList.remove('is-transition');
 
-      successModal.classList.add('is-visible');
-      successModal.classList.add('is-transition');
+      openModal('successCall');
+
       setTimeout(function () {
         form.reset();
       }, 500);
