@@ -32,7 +32,9 @@ function toggleMenu() {
   headerBtnMob.classList.toggle('is-opened');
   logoDef.classList.toggle('is-opened');
   body.classList.toggle('hideMob');
-  popupNav.classList.remove('is-active');
+  setTimeout(() => {
+    popupNav.classList.remove('is-active');
+  }, 300);
 }
 
 function closeMenu() {

@@ -37,9 +37,20 @@
         align-items: start;
         justify-content: space-between;
         transition: all 150ms ease-in;
+        position: relative;
+        &::before {
+          left: -0.75rem;
+          right: -0.75rem;
+          top: -0.5rem;
+          bottom: -0.5rem;
+          content: "";
+          position: absolute;
+          background-color: transparent;
+          transition: .3s;
+        }
         &:hover {
-          .popup-nav__name {
-            color: var(--ch);
+          &::before {
+            background-color: rgba(125, 42, 235, 0.18);
           }
         }
       }
@@ -76,7 +87,7 @@
       position: absolute;
       z-index: 20;
       top: 5.13rem;
-      transform: translateY(-100%);
+      transform: translateX(-100%);
       left: 0;
       width: 100%;
       background-color: var(--cf);
@@ -88,7 +99,7 @@
       visibility: hidden;
       opacity: 0;
       &.is-active {
-        transform: translateY(0);
+        transform: translateX(0);
         visibility: visible;
         opacity: 1;
       }

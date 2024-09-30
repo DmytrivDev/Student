@@ -75,6 +75,7 @@
 
 @media screen and (max-width: 960px) {
   .header {
+    z-index: 30;
     position: fixed;
     &__nav {
       display: none;
