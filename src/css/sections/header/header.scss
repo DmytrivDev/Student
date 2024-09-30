@@ -8,9 +8,6 @@
   transition: all 200ms ease-in-out;
   transform: translateY(0);
 
-  &.is-fixed {
-    transform: translateY(calc(-100% - 0.0625rem));
-  }
   &.scroll-down {
     background-color: var(--cx);
 

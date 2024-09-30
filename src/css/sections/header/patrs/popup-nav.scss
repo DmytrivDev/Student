@@ -39,14 +39,15 @@
         transition: all 150ms ease-in;
         position: relative;
         &::before {
+          content: "";
           left: -0.75rem;
           right: -0.75rem;
           top: -0.5rem;
           bottom: -0.5rem;
-          content: "";
           position: absolute;
           background-color: transparent;
-          transition: .3s;
+          transition: 0.3s;
+          border-radius: 0.25rem;
         }
         &:hover {
           &::before {
