@@ -48,5 +48,8 @@
 /* Feedback */
 @import url('./sections/feedback/feedback.scss');
 
+/* Error */
+@import url('./sections/error/error.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
