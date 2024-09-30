@@ -8,6 +8,12 @@ body {
 
 input, textarea {
   font-family: var(--ff);
+  border-width: 1px !important;
+
+  &.error {
+    border-width: 2px !important;
+    border-color: #F00 !important;
+  }
 }
 
 .overhide {

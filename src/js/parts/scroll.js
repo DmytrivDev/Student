@@ -1,4 +1,4 @@
-document.querySelectorAll('.btn-scroll').forEach(button => {
+document.querySelectorAll('.btn-scroll')?.forEach(button => {
     button.addEventListener('click', function() {
         const targetId = this.getAttribute('data-id');
         const targetElement = document.getElementById(targetId);
