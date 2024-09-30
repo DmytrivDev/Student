@@ -47,10 +47,36 @@
     }
   }
 
-  .btn-def {
-  }
-
   .modal__close {
     display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .success {
+    &__icon {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 0.75rem;
+      &::before {
+        width: 5rem;
+        height: 5rem;
+        background-size: 5rem 5rem;
+      }
+    }
+
+    &__info {
+      margin-bottom: 1.5rem;
+    }
+    &__title {
+      margin-bottom: 1.25rem;
+    }
+    &__text {
+      p {
+        text-align: center;
+        font-size: 0.875rem;
+        line-height: 1.42;
+      }
+    }
   }
 }
