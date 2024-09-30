@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 960px) {
   .header {
-    // position: fixed;
+    position: fixed;
     &__nav {
       display: none;
     }
@@ -177,7 +177,7 @@
     }
   }
 
-  .scroll-down {
+  .header {
     .header__btn-mob {
       visibility: visible;
       opacity: 1;
