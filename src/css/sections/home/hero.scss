@@ -195,5 +195,10 @@
     &__text {
       max-width: 18rem;
     }
+    .title-first {
+      br {
+        display: none;
+      }
+    }
   }
 }
