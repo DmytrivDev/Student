@@ -1,4 +1,3 @@
-import IMask from 'imask';
 import scrollLock from 'scroll-lock';
 
 const btnsOpenModal = document.querySelectorAll('.open-modal');
@@ -57,17 +56,5 @@ btnsOpenModal?.forEach(btn => {
         openModal();
       }
     }
-  });
-});
-
-const maskOptions = {
-  mask: '+{38} (000) 000 00 00',
-};
-
-document.addEventListener('DOMContentLoaded', function () {
-  const telInputs = document.querySelectorAll('input[type="tel"]');
-
-  telInputs.forEach(input => {
-    IMask(input, maskOptions);
   });
 });

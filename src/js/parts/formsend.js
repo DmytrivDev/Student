@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const telFields = document.querySelectorAll('input[type="tel"]');
 const sendButtons = document.querySelectorAll('.sendButton');
 
@@ -25,7 +27,7 @@ function sendMail(event) {
     const reqType = input.getAttribute('type');
 
     if (reqType === 'tel') {
-      if (inputVal.length !== 12) {
+      if (inputVal.length < 6 || inputVal.length > 18) {
         errorsCount += 1;
         input.classList.add('error');
       }
@@ -61,9 +63,17 @@ function sendFormData(form) {
   axios
     .post('/wp-content/themes/student/mail.php', formData)
     .then(function (response) {
+      const successModal = document.getElementById('successCall');
+      const formModal = document.getElementById('callbackCall');
+
+      formModal.classList.remove('is-visible');
+      formModal.classList.remove('is-transition');
+
+      successModal.classList.add('is-visible');
+      successModal.classList.add('is-transition');
       setTimeout(function () {
         form.reset();
-      }, 1100);
+      }, 500);
     })
     .catch(function (error) {
       console.error('Помилка при відправці форми:', error);
