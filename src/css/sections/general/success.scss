@@ -1,0 +1,56 @@
+.success {
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20.4375rem;
+    width: 100%;
+    margin-bottom: 1.1875rem;
+  }
+  &__icon {
+    position: relative;
+    width: 6.125rem;
+    height: 6.125rem;
+    margin-bottom: 0.5625rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 6.125rem;
+      height: 6.125rem;
+      background-size: 6.125rem 6.125rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='98' height='98' viewBox='0 0 98 98' fill='none'%3E%3Cpath d='M20.6233 93.7965L23.6971 74.3504C19.4418 70.71 16.0273 66.1894 13.6895 61.1007C11.3517 56.012 10.1462 50.4766 10.1563 44.8766C10.1563 23.4572 27.5822 6.03125 49.0016 6.03125C70.421 6.03125 87.8469 23.4572 87.8469 44.8766C87.8469 66.296 70.421 83.7219 49.0016 83.7219C45.7293 83.7236 42.4697 83.3131 39.3 82.5001L20.6233 93.7965Z' fill='%237D2AEB'/%3E%3Cpath d='M42.5587 66.0453L26.1523 48.341L31.0084 40.4179L42.4337 49.5981L62.9736 25.1357L71.9685 34.6704L42.5587 66.0453Z' fill='white'/%3E%3C/svg%3E");
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.16;
+    margin-bottom: 0.9375rem;
+  }
+  &__text {
+    p {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.42;
+    }
+  }
+
+  .btn-def {
+  }
+
+  .modal__close {
+    display: none;
+  }
+}

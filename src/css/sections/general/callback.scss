@@ -1,0 +1,100 @@
+.callback {
+  &__wrapp {
+  }
+
+  &__close {
+    position: absolute;
+    top: -3.31rem;
+    right: -3.56rem;
+    width: 3.9375rem;
+    height: 3.9375rem;
+    border-radius: 50%;
+    background-color: var(--cx);
+    transition: all 150ms ease-in;
+    &:hover {
+      background-color: var(--cc);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 1.6875rem;
+      height: 1.6875rem;
+      background-size: 1.6875rem 1.6875rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.6773 26.2929C23.2867 26.6834 22.6536 26.6834 22.263 26.2929L14.1478 18.1777C13.7573 17.7872 13.1242 17.7872 12.7336 18.1777L4.68955 26.2218C4.29902 26.6123 3.66586 26.6123 3.27533 26.2218L0.707107 23.6536C0.316583 23.263 0.316582 22.6299 0.707107 22.2393L8.75119 14.1953C9.14171 13.8047 9.14171 13.1716 8.75119 12.781L0.707108 4.73696C0.316583 4.34643 0.316582 3.71327 0.707107 3.32274L3.32274 0.707107C3.71327 0.316583 4.34643 0.316582 4.73696 0.707107L12.781 8.75119C13.1716 9.14171 13.8047 9.14171 14.1953 8.75119L22.2393 0.707108C22.6299 0.316583 23.263 0.316583 23.6536 0.707107L26.2218 3.27533C26.6123 3.66586 26.6123 4.29902 26.2218 4.68955L18.1777 12.7336C17.7872 13.1242 17.7872 13.7573 18.1777 14.1478L26.2929 22.263C26.6834 22.6536 26.6834 23.2867 26.2929 23.6773L23.6773 26.2929Z' fill='%23464546'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  &__info {
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.42;
+    p {
+      margin-bottom: 0.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__label {
+    input {
+      color: var(--cm);
+      padding: 1.125rem 1.25rem 1.125rem 1.25rem;
+      width: 100%;
+      border-radius: 1rem;
+
+      border: 0.125rem solid var(--cc);
+      background-color: var(--cw);
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: all 150ms ease-in;
+      &::placeholder {
+        opacity: 0.5;
+      }
+      &:hover,
+      &:focus {
+        border-color: var(--cf);
+      }
+    }
+
+    &.is-error {
+      input {
+        border-color: #f00;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .callback {
+    &__info {
+      margin-bottom: 1.25rem;
+    }
+    &__title {
+      margin-bottom: 1.25rem;
+    }
+
+    &__form {
+      gap: 1.25rem;
+    }
+  }
+}

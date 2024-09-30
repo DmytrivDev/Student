@@ -17,6 +17,8 @@
 @import url('./sections/general/reviews.scss');
 @import url('./sections/general/seo.scss');
 @import url('./sections/general/work.scss');
+@import url('./sections/general/callback.scss');
+@import url('./sections/general/success.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
