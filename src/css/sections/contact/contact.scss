@@ -174,8 +174,7 @@
     width: 100%;
     background-color: var(--cw);
     margin-top: 2.25rem;
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--cp);
       color: var(--cw);
     }

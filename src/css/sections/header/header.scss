@@ -112,8 +112,7 @@
       line-height: 1.71;
       transition: all 150ms ease-in;
       color: var(--cm);
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: var(--cp);
         color: var(--cw);
       }

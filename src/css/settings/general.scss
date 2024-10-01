@@ -9,9 +9,9 @@ body {
 input, textarea {
   font-family: var(--ff);
   border-width: 1px !important;
+  box-sizing: border-box !important;
 
-  &.error {
-    border-width: 2px !important;
+  &.form-error {
     border-color: #F00 !important;
   }
 }

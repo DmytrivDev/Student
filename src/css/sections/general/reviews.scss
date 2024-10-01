@@ -92,8 +92,7 @@
     border-radius: 2.5rem;
     background-color: var(--ch);
     transition: all 150ms ease-in;
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--cx);
       color: var(--cm);
     }
@@ -272,8 +271,7 @@
     color: var(--cw) !important;
     cursor: pointer;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: var(--cp) !important;
       color: var(--cw) !important;
     }
@@ -336,7 +334,6 @@
     transition: .3s;
 
     &.error {
-      background-color: ivory;
       border-color: red;
     }
   }
@@ -375,8 +372,7 @@
       cursor: pointer;
       width: calc(50% - .5rem);
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: var(--cp);
         color: var(--cw);
       }
@@ -391,6 +387,7 @@
 
 .wpcr3_rating_stars {
   display: flex;
+  padding-top: 0 !important;
 }
 
 .wpcr3_rating_stars.error {

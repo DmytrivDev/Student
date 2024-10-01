@@ -1,4 +1,5 @@
 import axios from "axios";
+import scrollLock from 'scroll-lock';
 
 import { openModal } from "./modal";
 
@@ -31,14 +32,14 @@ function sendMail(event) {
     if (reqType === 'tel') {
       if (inputVal.length < 6 || inputVal.length > 18) {
         errorsCount += 1;
-        input.classList.add('error');
+        input.classList.add('form-error');
       }
     }
 
     if (reqType === 'text' || input.tagName.toLowerCase() === 'textarea') {
       if (inputVal.length < 1) {
         errorsCount += 1;
-        input.classList.add('error');
+        input.classList.add('form-error');
       }
     }
   });
@@ -54,7 +55,7 @@ function sendMail(event) {
 
   document.querySelectorAll('input, textarea').forEach(function (input) {
     input.addEventListener('focusin', function () {
-      input.classList.remove('error');
+      input.classList.remove('form-error');
     });
   });
 }
@@ -69,6 +70,7 @@ function sendFormData(form) {
 
       formModal.classList.remove('is-visible');
       formModal.classList.remove('is-transition');
+      scrollLock.enablePageScroll(formModal);
 
       openModal('successCall');
 
